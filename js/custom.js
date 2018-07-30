@@ -41,5 +41,13 @@
 
     // WOW ANIMATION
     new WOW({ mobile: false }).init();
-
+    
+    
+    //active navbar
+   $('.collapse ul li').on('click', function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+ 
 })(jQuery);
+
+
