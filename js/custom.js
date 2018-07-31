@@ -47,7 +47,13 @@
    $('.collapse ul li').on('click', function(){
         $(this).addClass('active').siblings().removeClass('active');
     });
- 
+    
+   $('.slider .circle-image') .load(function(){
+       $(this).animate({top: "100px"});
+   })
+
 })(jQuery);
+
+
 
 
