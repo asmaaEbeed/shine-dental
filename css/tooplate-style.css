@@ -84,7 +84,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   a:hover, a:active, a:focus {
-    color: #15d2d2;
+    color: #01bdbd;
     outline: none;
   }
 
@@ -107,7 +107,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .section-btn {
-    background: #15d2d2;
+    background: #01bdbd;
     border: 0;
     border-radius: 3px;
     color: #ffffff;
@@ -259,7 +259,7 @@ http://www.tooplate.com/view/2098-health
   -----------------------------------------*/
 
   header {
-    background:#15d2d2;
+    background:#01bdbd;
     display: flex;
     height: 45px;
   }
@@ -300,7 +300,7 @@ header .container .row a {
   }
 
   header span i {
-    color: #15d2d2;
+    color: #01bdbd;
     margin-right: 5px;
   }
 
@@ -322,9 +322,9 @@ header .container .row a {
     color: #393939;
     font-weight: 500;
   }
-.navbar-default .navbar-brand span {
+.c-letter {
     color: #fff;
-    background-color: #15d2d2;
+    background-color: #01bdbd;
     border-radius: 3px;
     padding: 0 3px;
     margin-right: 2px;
@@ -332,7 +332,7 @@ header .container .row a {
 
 
   .navbar-default .navbar-brand .fa {
-    color: #15d2d2;
+    color: #01bdbd;
   }
 
   .navbar-default .navbar-nav li.appointment-btn {
@@ -340,7 +340,7 @@ header .container .row a {
   }
 
   .navbar-default .navbar-nav li.appointment-btn a {
-    background: #15d2d2;
+    background: #01bdbd;
     border-radius: 3px;
     color: #ffffff;
     font-weight: 600;
@@ -451,7 +451,7 @@ header .container .row a {
 .slider .circle-image{
     position: absolute;
     right: 90px;
-    top: 656px;
+    top: 30px;
     
 }
 
@@ -497,11 +497,15 @@ header .container .row a {
   -----------------------------------------*/
 
   #about {
-    background: url('../images/about-bg.jpg') no-repeat top center;
+/*
+    background: url('../images/about-bg1.jpg') no-repeat top center;
     background-size: cover;
+*/
     padding-top: 150px;
-    padding-bottom: 150px;
+      padding-bottom: 0px;
+    padding-bottom: 0px;
   }
+
 
   .profile img,
   .profile figcaption {
@@ -598,7 +602,7 @@ header .container .row a {
   -----------------------------------------*/
 
   #service {
-    background: #15d2d2;
+    background: #01bdbd;
   }
 
   #service h2,
@@ -618,7 +622,7 @@ header .container .row a {
     font-size: 50px;
     margin-bottom: 10px;
     background: #ffffff;
-    color: #15d2d2;
+    color: #01bdbd;
     width: 120px;
     height: 120px;
     line-height: 120px;
@@ -805,8 +809,8 @@ header .container .row a {
   }
 
   #appointment button#cf-submit {
-    background: #15d2d2;
-    color: #ffffff;
+    background: #272c2c;
+    color: #f8f8f8;
     font-weight: 600;
     height: 55px;
   }
@@ -1091,7 +1095,7 @@ header .container .row a {
 }
 .collapse ul li.active {
    
-    background-color: #15d2d2;
+    background-color: #01bdbd;
     
 }
 .navbar-default .navbar-nav>.active>a{
@@ -1131,7 +1135,7 @@ section .container .collapse li.active ul.dropdown-menu li.active a{
 
 .dropdown-menu li a:hover {
     color: #fff !important;
-    background: #15d2d2 !important;
+    background: #01bdbd !important;
 }
 
 .dropdown-menu  {
@@ -1188,7 +1192,7 @@ section .container .collapse li .dropdown-menu  {
 	  margin: 2px 0 0;
 	  font-size: 13px;
 	  list-style: none;
-	  background-color: #15d2d2;
+	  background-color: #01bdbd;
 	  background-clip: padding-box;
 	  border: 1px solid #f5f5f5;
 	  border: 1px solid rgba(0, 0, 0, .15);
@@ -1232,5 +1236,60 @@ header .nav .caret {
     color: #fff !important;
 }
 /*End My Drop Down Menu*/
+/*about section my edit*/
+#about .about-doc-img{
+    text-align: right;
+}
+@media (max-width: 991px) {
+    #about {
+        padding-bottom: 100px;
+    }
+}
 
 
+
+/*End about section my edit*/
+/*Team section*/
+#team {
+        background-image: linear-gradient(rgb(183, 234, 241) 0%, rgb(82, 205, 221,0.7) 50%, rgb(1, 189, 189, 1) 100%)
+}
+#team .about-info h2{
+    color: #2d2d2d;
+}
+
+.team-thumb{
+    margin-top: 25px;
+    max-width: 450px;
+}
+@media (max-width: 767px){
+    .team-thumb{
+    margin: auto;
+        margin-bottom: 25px;
+    }
+}
+
+/*EndTeam section*/
+
+/*start news-thumb*/
+
+.news-thumb{
+    margin-bottom: 25px;
+}
+/*end news-thumb*/
+
+/*Start appointment*/
+#appointment{
+    background-image: linear-gradient(rgb(9, 191, 192) 0%, rgb(82, 205, 221,0.7) 50%, rgb(1, 189, 189, 1) 100%);
+    padding-bottom: 60px;
+}
+
+#appointment button#cf-submit:hover {
+    background: #00afaf;
+    color: #fff;
+    border: 2px solid #fff;
+}
+#appointment img {
+   background-image: linear-gradient(rgb(9, 191, 192, 0) 0%, rgb(253, 253, 253,0.5) 30%, rgb(254, 254, 254, 1) 80%);
+    border-radius: 18px;
+}
+/*appointment*/
