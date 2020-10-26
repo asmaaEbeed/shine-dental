@@ -451,7 +451,7 @@ header .container .row a {
 .slider .circle-image{
     position: absolute;
     right: 90px;
-    top: 30px;
+    bottom: 0px;
     
 }
 
@@ -1288,8 +1288,116 @@ header .nav .caret {
     color: #fff;
     border: 2px solid #fff;
 }
-#appointment img {
+/* #appointment img {
    background-image: linear-gradient(rgb(9, 191, 192, 0) 0%, rgb(253, 253, 253,0.5) 30%, rgb(254, 254, 254, 1) 80%);
     border-radius: 18px;
-}
+} */
 /*appointment*/
+
+
+/*pop-up*/
+.popup {
+
+
+  /*height: auto;
+left: 0;
+min-height: 100%;
+position: absolute;
+right: 0;
+top: 0;
+z-index: 400;*/
+
+position: fixed;     /*was fixed*/
+right: 0;
+top: 0;
+left: 0;
+width: 100%;
+height: auto;
+min-height: 100%;
+z-index: 9999;
+display: none;
+overflow-y: none;
+}
+.pop-up-color-overlay {
+background-color: rgba(14, 10, 0, 0.88);
+bottom: 0;
+left: 0;
+position: fixed;
+right: 0;
+top: 0;
+}
+.popup .inner-popup  {
+ background-color: #fff;
+ border: 1px solid #cccccc;
+ width: 700px;
+ left: 50%;
+ position: absolute;            /*Was Absolute*/
+ margin-left: -350px;   /*Half Width to make popup in center horizontaly*/
+ top: 0;
+ margin-top: 6%;      /*Half height text-align make popup in center verticaly*/
+ border-radius: 5px;
+ margin-bottom: 2%
+}
+@media (max-width: 767px) {
+.popup .inner-popup {
+  width: 580px;
+  margin-left: -290px; 
+}
+
+}
+@media(max-width:600px) {
+.popup .inner-popup {
+width: 400px;
+margin-left: -200px; 
+}
+
+}
+@media(max-width:414px) {
+.popup .inner-popup {
+  width: 300px;
+margin-left: -150px; 
+}
+}
+.modal-header {
+border-bottom: none;
+color: #ffa800
+}
+.modal-body {
+padding: 1em 1em 0em;
+margin: 0.5em 1em;
+border: 1px solid #D0D0D0;
+max-height: 300px;
+overflow: auto;
+min-height: 60px;
+}
+.modal-footer {
+margin-top: 0px;
+}
+.modal-header .close span:hover {
+color: #ffa800
+}
+
+#show_popup{
+  cursor: pointer;
+  color: blue;
+  font-size: 23px;
+  text-decoration: underline;
+}
+.mail-lnk{
+  background: #01bdbd !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  /* height: 55px; */
+  width: 100%;
+  display: block;
+  padding: 13px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 21px;
+  box-shadow: 1px 1px 3px #696969;
+}
+.mail-lnk:hover{
+  background: #039494 !important;
+  color: #fff;
+}
+/*End popup*/
